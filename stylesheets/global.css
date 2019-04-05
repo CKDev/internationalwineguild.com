@@ -1,0 +1,216 @@
+/* --------------------------------------------------------------
+START - Based on buttons.css by Kevin Hale [particletree.com]
+particletree.com/features/rediscovering-the-button-element
+-------------------------------------------------------------- */
+
+a.button, button { display: block; float: left; margin: 0 0.583em 0.667em 0; padding: 5px 10px 5px 7px; /* Links */ border: 1px solid #dedede; border-top: 1px solid #eee; border-left: 1px solid #eee; background-color: #f5f5f5; font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif; font-size: 100%; line-height: 130%; text-decoration: none; font-weight: bold; color: #565656; cursor: pointer;}
+button { width: auto; overflow: visible; padding: 4px 10px 3px 7px; /* IE6 */ }
+button[type] { padding: 4px 10px 4px 7px; /* Firefox */ line-height: 17px; /* Safari */ }
+*:first-child+html button[type] { padding: 4px 10px 3px 7px; /* IE7 */ }
+button img, a.button img { margin: 0 3px -3px 0 !important; padding: 0; border: none; width: 16px; height: 16px; float: none; }
+
+/* Button colors ------------------------------------------ */
+
+/* Standard */
+button:hover, a.button:hover { background-color: #dff4ff; border: 1px solid #c2e1ef; color: #336699; }
+a.button:active { background-color: #6299c5; border: 1px solid #6299c5; color: #fff; }
+
+/* Positive */
+body .positive { color: #529214; }
+a.positive:hover, button.positive:hover { background-color: #E6EFC2; border: 1px solid #C6D880; color: #529214; }
+a.positive:active { background-color: #529214; border: 1px solid #529214; color: #fff; }
+
+/* Negative */
+body .negative { color: #d12f19; }
+a.negative:hover, button.negative:hover { background: #fbe3e4; border: 1px solid #fbc2c4; color: #d12f19; }
+a.negative:active { background-color: #d12f19; border: 1px solid #d12f19; color: #fff; }
+/* --------------------------------------------------------------
+END - Based on buttons.css by Kevin Hale [particletree.com]
+particletree.com/features/rediscovering-the-button-element
+-------------------------------------------------------------- */
+
+body { margin: 0; padding: 0; color: #333; background: #fff url("/images/body_background.jpg") no-repeat 50% top; font-family: Georgia,serif; font-size: 80%; }
+
+a { color: #903; }
+a:hover { color: #636; }
+a:active { outline: none; }
+
+img.border { padding: 1px; border: 1px solid; }
+a img.border { border-color: #903; }
+a:hover img.border { padding: 0; border: 2px solid; }
+
+h1, h2, h3, h5, h6 { padding: 0.25em 0; margin: 0 0 0.5em 0; line-height: 1.5em; font-weight: normal; background-color: #fff; }
+h1 { font-size: 2em; border-top: 8px solid #903; }
+h2 { font-size: 1.25em; border-top: 8px solid #ccc; border-bottom: 1px solid #ccc; }
+h4 { padding: 0.25em 0; margin: 0 0 0.5em 0; line-height: 1.5em; font-weight: normal; }
+h6 { font-size: 1.25em; }
+h5 { padding: 0.25em .25em; margin: 0 0 0.5em 0; line-height: 1.5em; font-weight: normal; background-color: #903; font-size: 2em; border-top: 8px solid #333;color:#fff;}
+p img, p img.right { margin-top: 0; }
+hr { margin: 0.5em 0; }
+
+.ie-header {}
+
+div.tag-cloud {font-size:.8em;text-align:justify;}
+.tag-cloud h1 { padding: 0 0; margin: 0 0 0 0; font-size:2.0em;line-height: 1.0em; font-weight: normal; background-color:transparent; border:none;display:inline; }
+.tag-cloud h2 { padding: 0 0; margin: 0 0 0 0; font-size:1.6em;line-height: 1.0em; font-weight: normal; background-color:transparent; border:none;display:inline; }
+.tag-cloud h3 { padding: 0 0; margin: 0 0 0 0; font-size:1.3em;line-height: 1.0em; font-weight: normal; background-color:transparent; border:none;display:inline; }
+.tag-cloud a { text-decoration:none; }
+.tag-cloud a:hover { text-decoration:underline; }
+
+blockquote { margin: 3em 0; padding: 1.5em 0 0 0; background: transparent url("/images/quote_open.gif") no-repeat left top; }
+blockquote p { padding: 0 0 18px 18px; background: transparent url("/images/quote_close.gif") no-repeat right bottom; }
+
+.center { text-align: center; }
+
+label { font-weight: normal; }
+input.text { width: 92%; }
+input.small { width: 30px; }
+textarea { width: 92%; height: 8em; }
+
+#header { text-align: right; }
+
+span.follow { margin: 2px 5px 0 0; }
+a.follow { display:inline-block; height: 25px; width: 25px;vertical-align: middle; text-indent:-9999px; text-align: left; overflow: hidden; background: url("/images/follow.png") 0 0 no-repeat; }
+a.follow.facebook { background-position: 0 -25px;}
+#global-menu-container { margin-bottom: 1em; padding: 0 0 1px 0; border-bottom: 1px solid #ccc; }
+
+
+/* BEGIN Override superfish.css */
+.sf-menu { margin: 0; padding: 0; }
+.sf-menu a { margin: 0 0 1px 0; padding: .25em .75em; background-color: #fff; font-size: 1.20em; color: #333; text-decoration: none; text-shadow: #fff 0 1px 1px; border: 1px solid #666; border-top: 8px solid #666; }
+.sf-menu a:hover { border-color: #9C0; background-color: #eee; }
+.sf-menu a:visited { color: #333; }
+.sf-menu li { margin: 0; padding: 0; float: left; list-style: none; background-color: transparent; }
+.sf-menu li li,
+.sf-menu li li li { background-color: transparent; }
+.sf-menu li li a,
+.sf-menu li li li a { margin-bottom: 0; padding-left: 20px; border: none; border-bottom: 1px solid #666; background: #fff url("/images/bullet_grn_lg.gif") no-repeat 4px 6px; }
+.sf-menu li li a:hover,
+.sf-menu li li li a:hover { border-color: #666; background: #eee url("/images/bullet_grn_lg.gif") no-repeat 4px 6px; }
+.sf-menu li li:last-child a,
+.sf-menu li li li:last-child a {}
+.sf-menu li:hover,
+.sf-menu li.sfHover,
+.sf-menu a:focus,
+.sf-menu a:active { background-color: transparent; }
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul { top: 2.5em; border: 1px solid #666; border-bottom: 4px solid #666; }
+/* END Override superfish.css */
+
+div#classes-callouts {}
+div#classes-callouts .classes-callout { background: transparent url("/images/background-callout.png") no-repeat left top; }
+div#classes-callouts .classes-callout div { margin: 0; padding: 20px; }
+div#classes-callouts .classes-callout div h3 { margin: 0; padding: 0; color: #903; background-color: transparent; }
+div#classes-callouts .classes-callout div ul { margin: 1em 0; padding: 0 0 0 10px; }
+div#classes-callouts .classes-callout div ul li { margin: 0; padding: 0 0 0.5em 20px; list-style: none; background: transparent url("/images/bullet-wine-glass.png") no-repeat left 0.25em; }
+
+.callout { background-color: #f8f8f8; border: 1px solid #ccc; -moz-border-radius: 9px; -khtml-border-radius: 9px; -webkit-border-radius: 9px; }
+.callout h3 { margin: 0.5em 10px; padding: 0 0 0.5em 0; color: #903; font-size: 0.9em; line-height: 1.25em; text-transform: uppercase; border-bottom: 1px solid #ccc; background-color: transparent; }
+.callout ul { margin: 0 10px 1em 30px; padding: 0; font-size: 0.9em;}
+.callout p { margin: 0 10px 1em 10px; line-height: 1em; }
+
+ul.certification-options-course-track { margin: 0 0 10px 0; padding: 0; }
+ul.certification-options-course-track li { margin: 0 0 0 10px; padding: 4px 2px; float: left; list-style: none; min-height: 3em; width: 144px; text-align: center; font-size: 0.9em; line-height: 1em; border: 1px solid #ccc; background-color: #f8f8f8; -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; }
+ul.certification-options-course-track li.notice { background-color: #ffc; color: #996; border-color: #996; }
+
+.footnote { margin: 0 0 1em 0; padding: 1em 0 0 0; color: #999; font-size: 0.9em; line-height: 1.25em; }
+
+h4 span { display: block; float: left; width: 80px; }/* Maybe this should be more specific? */
+
+#sidebar {}
+#sidebar div {  background-color: #eee; border-top: 8px solid #9c0; border-bottom: 1px solid #ccc; padding: 0 4px; margin-bottom: 2em; }
+#sidebar div h6 { background-color: transparent; }
+#sidebar div ul { float: left; margin: 0; padding: 0; list-style: none; }
+#sidebar div ul li { float: left; margin: 0; padding: 0; }
+#sidebar div a.pdf-link { margin: 0; padding: 0 0 0 32px; display: block; line-height: 1.25em; font-size: 0.9em; text-decoration: none; min-height: 36px; background: transparent url("/images/bullet-pdf-icon.gif") no-repeat left top; }
+#sidebar div ul.product-list li { padding: 0.5em 0; }
+#sidebar div ul.product-list li p { float: left; margin: 0 4px 0 0; padding: 0; width: 28px; max-height: 48px; overflow: hidden; border: 1px solid #903; }
+#sidebar div ul.product-list li p a { margin: 0; padding: 0; }
+#sidebar div ul.product-list li span { float: left; width: 146px; }
+#sidebar div ul.product-list li span a { float: left; margin: 0; padding: 0; display: block; line-height: 1.25em; font-size: 0.9em; text-decoration: none; }
+
+ul#menu_a { list-style: none; margin: 0 0 2em 0; background-color: #fff; border-top: 8px solid #9c0; }
+ul#menu_a li { margin: 0; padding: 0; border-bottom: 1px solid #ccc; }
+ul#menu_a li a { display: block; padding: 4px 0 4px 20px; color: #333; text-decoration: none; font-size: 1.25em; line-height: 1em; background: transparent url("/images/bullet_grn_lg.gif") no-repeat 4px 6px; }
+ul#menu_a li a:hover { color: #333; background-color: #eee; }
+
+ul#menu_b { list-style: none; margin: 0 0 2em 0; background-color: #fff; border-top: 8px solid #9c0; }
+ul#menu_b li { margin: 0; padding: 0; border-bottom: 1px solid #ccc; }
+ul#menu_b li a { display: block; padding: 4px 0 4px 20px; color: #333; text-decoration: none; font-size: 1em; line-height: 1em; background: transparent url("/images/bullet_grn_sm.gif") no-repeat 8px 8px; }
+ul#menu_b li a:hover { color: #333; background-color: #eee; }
+
+.feedback {z-index:9999999;position:fixed !important;position:absolute;cursor:pointer;}
+.feedback-position {bottom:2px;_top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? document.documentElement.scrollTop + (document.documentElement.clientHeight-this.clientHeight) - 16 :document.body.scrollTop + (document.body.clientHeight-this.clientHeight) - 16 );}
+.feedback-align {right:0px;}
+
+#footer { margin-top: 6em; margin-bottom: 2em; padding: 2em 0; border-top: 4px solid #9c0; border-bottom: 8px solid #ccc; }
+
+.calendar { border-collapse: collapse; }
+.calendar .day-name th { background-color: #eee; border: 1px solid #ccc; border-top: 4px solid #ccc; border-bottom: 2px solid #ccc; }
+.calendar h3 { display: inline; }
+.calendar h6 { background-color: transparent; border-bottom: 1px solid #ccc; }
+.calendar tr { }
+.calendar th { width: 14%; background-color: transparent; }
+.calendar td { vertical-align: top; border: 1px solid #ccc; background: transparent url("/images/calendar/calendar_cell_background.gif") repeat-x left top; }
+.calendar td.other-month h6 { color: #ccc; }
+.calendar p.green { border-top: 1px solid #9c0; background: transparent url("/images/calendar/calendar_p_grn_background.gif") repeat-x left top; }
+.calendar p.orange { border-top: 1px solid #fc0; background: transparent url("/images/calendar/calendar_p_org_background.gif") repeat-x left top; }
+.calendar p.yellow { border-top: 1px solid #ff0; background: transparent url("/images/calendar/calendar_p_ylw_background.gif") repeat-x left top; }
+.calendar p.blue { border-top: 1px solid #09c; background: transparent url("/images/calendar/calendar_p_blu_background.gif") repeat-x left top; }
+.calendar p.red { border-top: 1px solid #c00; background: transparent url("/images/calendar/calendar_p_red_background.gif") repeat-x left top; }
+.calendar p.purple { border-top: 1px solid #90c; background: transparent url("/images/calendar/calendar_p_prp_background.gif") repeat-x left top; }
+
+
+#info-callout-wrapper { float: right; width: 180px; margin: 0 0 10px 10px; padding: 10px; border: 1px solid #9f2a43; background:#dce4ba; }
+#info-callout-wrapper h2 { margin: 0.25em 0; letter-spacing: 0; background: none; border-top: none; border-bottom: none; }
+#info-callout-wrapper ul { list-style-type: none; margin-left: 0; }
+#info-callout-wrapper ul li { margin-left: 1em; margin-bottom: 1em; text-indent: -1em; }
+
+.callout-one { padding: 10px; border: 1px solid #9f2a43; background: #dce4ba; }
+
+
+#level-iii-block a {color:#333;text-decoration:none;}
+#level-iii-block a:hover {color:#903;text-decoration:underline;}
+
+div#dyd .social {margin:  0 ; padding: 5px 10px; float: left; width: 453px; background: #9c0; }
+    .twitter-share-button, p.fb-like-button-count, p.plusone-button   {  display:inline-block; height: 25px; line-height: 1em; margin: 0; vertical-align: top; }
+    .social .share-email {  font-weight: bold; display: inline-block; height: 25px; padding-left: 30px; background: url("/images/email-share.png") 0 0 no-repeat; }
+    .social .call-to-action { margin: 0 0 .25em 0 ; }
+#menu_a .fb-like { background: #fff; border-bottom: 0;}
+#menu_a .fb-like h6  { padding-left: 60px; min-height:60px; font-size: 1.2em; font-weight: bold; line-height: 1.2em; background: url("/images/fb-icon.jpg") 0 5px no-repeat; color: #3B5998; font-family: "lucida grande",tahoma,verdana,arial,sans-serif;  }
+#menu_a .fb-like h6 em { font-style: normal; font-weight: normal; font-size: .8em;}
+#menu_a .fb-like span { margin-left: 3px;}
+
+div#badges {
+  background: #EFEFEF;
+  padding: 0px;
+}
+
+#bades h2 {background:#EFEFEF;}
+
+  div#badges div.last {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+div.badge {
+  float: left;
+  margin-right: 0px;
+  padding-right: 5px;
+  width: 230px;
+}
+  div.badge img {
+	padding:0;
+	margin:0;
+    -moz-box-shadow: 0 2px 8px -2px #AAA;
+    margin-bottom: 0.5em;
+  }
+  div.badge h6 {
+    color: #5B5A60;
+  }
+  div.badge textarea {
+    height: 1.0em;
+    width: 215px;
+	
+  }
+
