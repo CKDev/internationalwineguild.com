@@ -5,6 +5,7 @@ Tynan's International Wine Guild site.
 ## TODO
 
 The includes on default layout shouldn't go on the homepage
+Check the woofu forms
 
 ## Notes
 
