@@ -187,10 +187,13 @@
 
       <div class="clear clearfix">
         <h6>Search IWG</h6>
-        <form method="GET" action="/search">
-          <label for="search">Keywords:</label><br /><input id="search" name="q" type="text" class="text" />
-          <p class="clear clearfix"><button type="submit" class="button positive"><img alt="" height="16"
-                src="/images/form_button_icons/folder_magnify.png" title="" width="16" />Search</button></p>
+        <form id="site-search" method="GET" action="/">
+          <label for="search-term">Keywords:</label><br />
+          <input id="search-term" type="text" class="text" />
+          <p class="clear clearfix"><button type="submit" class="button positive">
+              <img alt="" height="16" src="/images/form_button_icons/folder_magnify.png" title=""
+                width="16" />Search</button>
+          </p>
         </form>
       </div>
 
@@ -288,9 +291,11 @@
       alt="Customer Feedback" border="0" /></a>
 
   <script type="text/javascript">
-    $(document).ready(function () {
-      $("ul.sf-menu").supersubs({ minWidth: 12, maxWidth: 16, extraWidth: 1 }).superfish({ delay: 100, speed: 'fast', autoArrows: false, dropShadows: false }).find('ul').bgIframe({ opacity: false });
-    });
+    (function ($) {
+      $(document).ready(function () {
+        $("ul.sf-menu").supersubs({ minWidth: 12, maxWidth: 16, extraWidth: 1 }).superfish({ delay: 100, speed: 'fast', autoArrows: false, dropShadows: false }).find('ul').bgIframe({ opacity: false });
+      });
+    })(jQuery);
   </script>
 
   <script type="text/javascript">
@@ -308,6 +313,18 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 
+  </script>
+
+  <script type="text/javascript">
+    (function ($) {
+      $(document).ready(function () {
+        $("#site-search").submit(function (event) {
+          event.preventDefault();
+          var searchTerm = $("#search-term").val();
+          document.location = 'https://www.google.com/search?&q=site%3Ainternationalwineguild.com+' + searchTerm;
+        });
+      });
+    })(jQuery);
   </script>
 
   <!-- Google Analytics Social Button Tracking -->
