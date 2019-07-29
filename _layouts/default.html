@@ -4,11 +4,10 @@
 
 <head>
   <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
-  <title>Wine Education | Wine Classes</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-  <meta name="description"
-    content="The Guild Wine School offers state-approved sommelier courses, sommelier training, and wine classes. Wine diplomas and wine certification available." />
+  <meta name="description" content="{{site.description}}" />
   <meta name="keywords" content="" />
   <meta name="google-site-verification" content="f0Wvp_AaabBqZtJvyqermA0PjckBDn9d9V6imCEHeJg" />
 
@@ -18,61 +17,31 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://internationalwineguild.com/" />
   <meta property="og:title" content="Wine Education | Wine Classes" />
-  <meta property="og:image" content="/images/iwg-fb-icon.jpg?1370581534" />
+  <meta property="og:image" content="/images/iwg-fb-icon.jpg" />
   <meta property="og:description"
     content="The Guild Wine School offers state-approved sommelier courses, sommelier training, and wine classes. Wine diplomas and wine certification available." />
 
+  <link href="/stylesheets/blueprint/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/blueprint/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]><link href="/stylesheets/blueprint/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if IE 7]><link href="/stylesheets/ie6.css" media="screen, projection" rel="stylesheet" type="text/css" /><![endif]-->
+  <script src="/javascripts/jquery-1.6.2.min.js" type="text/javascript"></script>
 
+  <script src="/javascripts/jquery.bgiframe.min.js" type="text/javascript"></script>
 
-  <link href="/stylesheets/blueprint/screen.css?1370581534" media="screen, projection" rel="stylesheet"
-    type="text/css" />
-  <link href="/stylesheets/blueprint/print.css?1370581534" media="print" rel="stylesheet" type="text/css" />
-  <!--[if IE]><link href="/stylesheets/blueprint/ie.css?1370581534" media="screen, projection" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if IE 7]><link href="/stylesheets/ie6.css?1370581534" media="screen, projection" rel="stylesheet" type="text/css" /><![endif]-->
-  <script src="/javascripts/jquery-1.6.2.min.js?1370581534" type="text/javascript"></script>
+  <link href="/stylesheets/superfish.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/superfish.js" type="text/javascript"></script>
 
-  <script src="/javascripts/jquery.bgiframe.min.js?1370581534" type="text/javascript"></script>
+  <script src="/javascripts/supersubs.js" type="text/javascript"></script>
 
-  <link href="/stylesheets/superfish.css?1370581534" media="screen, projection" rel="stylesheet" type="text/css" />
-  <script src="/javascripts/superfish.js?1370581534" type="text/javascript"></script>
+  <link href="/stylesheets/global.css" media="screen" rel="stylesheet" type="text/css" />
 
-  <script src="/javascripts/supersubs.js?1370581534" type="text/javascript"></script>
-
-  <link href="/stylesheets/global.css?1370581534" media="screen" rel="stylesheet" type="text/css" />
-  <script src="/javascripts/twitter.js?1370581534" type="text/javascript"></script>
-
-  <link href="/stylesheets/lightbox.css?1370581534" media="screen" rel="stylesheet" type="text/css" />
-  <script src="/javascripts/prototype.js?1370581534" type="text/javascript"></script>
-  <script src="/javascripts/effects.js?1370581534" type="text/javascript"></script>
-  <script src="/javascripts/dragdrop.js?1370581534" type="text/javascript"></script>
-  <script src="/javascripts/controls.js?1370581534" type="text/javascript"></script>
-  <script src="/javascripts/lightbox.js?1370581534" type="text/javascript"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $("ul.sf-menu").supersubs({ minWidth: 12, maxWidth: 16, extraWidth: 1 }).superfish({ delay: 100, speed: 'fast', autoArrows: false, dropShadows: false }).find('ul').bgIframe({ opacity: false });
-    });
-  </script>
-
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-1025066-44']);
-    _gaq.push(['_setDomainName', 'internationalwineguild.com']);
-    _gaq.push(['_setAllowHash', false]);
-    _gaq.push(['_setAllowLinker', true]);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-
-  <!-- Google Analytics Social Button Tracking -->
-  <script src="/javascripts/ga_social_tracking.js?1370581534" type="text/javascript"></script>
+  <link href="/stylesheets/lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/dragdrop.js" type="text/javascript"></script>
+  <script src="/javascripts/controls.js" type="text/javascript"></script>
+  <script src="/javascripts/lightbox.js" type="text/javascript"></script>
 
 </head>
 
@@ -174,7 +143,7 @@
           <input type=hidden value="oi" name="p">
           <label for="customer_email">E-mail:</label><br /><input id="ea" name="ea" type="text" class="text" />
           <p class="clear clearfix"><button type="submit" class="button positive"><img alt="" height="16"
-                src="/images/form_button_icons/email_go.png?1370581534" title="" width="16" />Sign Up</button></p>
+                src="/images/form_button_icons/email_go.png" title="" width="16" />Sign Up</button></p>
         </form>
       </div>
 
@@ -207,7 +176,7 @@
 
           <li>
             <p><a href="/shop/product/25"><img alt="Sommelier Double-Boot Corkscrew" class="product" height="80"
-                  src="/images/fpo/no_photo_icon.gif?1370581534" title="" width="106" /></a></p>
+                  src="/images/fpo/no_photo_icon.gif" title="" width="106" /></a></p>
             <span><a href="/shop/product/25">Sommelier Double-Boot Corkscrew</a><br
                 class="clear clearfix" />$7.00</span>
           </li>
@@ -221,18 +190,18 @@
         <form method="GET" action="/search">
           <label for="search">Keywords:</label><br /><input id="search" name="q" type="text" class="text" />
           <p class="clear clearfix"><button type="submit" class="button positive"><img alt="" height="16"
-                src="/images/form_button_icons/folder_magnify.png?1370581534" title="" width="16" />Search</button></p>
+                src="/images/form_button_icons/folder_magnify.png" title="" width="16" />Search</button></p>
         </form>
       </div>
 
       <ul id="menu_a">
         <li class="fb-like">
           <h6>International Wine Guild <em>on Facebook</em></h6>
-          <fb:like href="http://www.internationalwineguild.com/" xfbml="true" show_faces="true" layout="button_count">
+          <fb:like href="/" xfbml="true" show_faces="true" layout="button_count">
           </fb:like>
         </li>
         <a href="http://www.twitter.com/WineGuild"><img alt="Wine Guild on Twitter" height="55"
-            src="/images/twitter_logo.png?1370581534" title="" width="150" /></a>
+            src="/images/twitter_logo.png" title="" width="150" /></a>
       </ul>
 
       <div class="tag-cloud">
@@ -266,7 +235,7 @@
 
   <div id="footer" class="container">
     <a href="http://www.twitter.com/WineGuild"><img alt="International Wine Guild on Twitter" height="55"
-        src="/images/twitter_logo.png?1370581534" title="" width="150" /></a>
+        src="/images/twitter_logo.png" title="" width="150" /></a>
 
     <div class="AuthorizeNetSeal">
       <script type="text/javascript"
@@ -296,15 +265,6 @@
 
   <script type="text/javascript" charset="utf-8">
 
-    getTwitters('tweet', {
-      id: 'WineGuild',
-      count: 3,
-      enableLinks: true,
-      ignoreReplies: true,
-      clearContents: true,
-      template: '<p>"%text%" <a href="http://twitter.com/%user_screen_name%/statuses/%id%/">%time%</a></p>'
-    });
-
     var _sf_async_config = { uid: 15052, domain: "internationalwineguild.com" };
     (function () {
       function loadChartbeat() {
@@ -327,7 +287,32 @@
   <a href="/customer-feedback-form/" class="feedback feedback-position feedback-align"><img src="/images/feed-back.gif"
       alt="Customer Feedback" border="0" /></a>
 
-  <script src="/javascripts/share-n-track.js?1370581534" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("ul.sf-menu").supersubs({ minWidth: 12, maxWidth: 16, extraWidth: 1 }).superfish({ delay: 100, speed: 'fast', autoArrows: false, dropShadows: false }).find('ul').bgIframe({ opacity: false });
+    });
+  </script>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1025066-44']);
+    _gaq.push(['_setDomainName', 'internationalwineguild.com']);
+    _gaq.push(['_setAllowHash', false]);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+  <!-- Google Analytics Social Button Tracking -->
+  <script src="/javascripts/ga_social_tracking.js" type="text/javascript"></script>
+  <script src="/javascripts/share-n-track.js" type="text/javascript"></script>
 
 </body>
 
