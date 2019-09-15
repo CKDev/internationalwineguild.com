@@ -1,0 +1,32 @@
+// var IWGCalendarEvents = [
+// title: & quot; My repeating event & quot;, { or could be “may repeating intensive study Level 2 event”, }
+// start: ’08: 30,
+//   end: &#39; 17: 30 &#39;,
+// daysOfWeek: [6],
+//   startRecur: & quot; 2019 - 09 - 09 & quot;,
+// endRecur: & quot; 2019 - 09 - 14 & quot;,
+// title: & quot; My repeating event & quot;, { or could be “may repeating intensive study Level 2 event”, }
+// start: ’08: 30,
+//   end: &#39; 17: 30 &#39;,
+// daysOfWeek: [6],
+//   startRecur: & quot; 2019 - 10 - 07 & quot;,
+// endRecur: & quot; 2019 - 09 - 12 & quot;,
+// title: & quot; My repeating event & quot;, { or could be “may repeating intensive study Level 2 event”, }
+// start: ’08: 30,
+//   end: &#39; 17: 30 &#39;,
+// daysOfWeek: [6],
+//   startRecur: & quot; 2019 - 11 - 04 & quot;,
+// endRecur: & quot; 2019 - 09 - 09”,
+// title: & quot; My repeating event & quot;, { or could be “may repeating intensive study Level 2 event”, }
+// start: ’08: 30,
+//   end: &#39; 17: 30 &#39;,
+// daysOfWeek: [6],
+//   startRecur: & quot; 2019 - 12 - 09 & quot;,
+// endRecur: & quot; 2019 - 09 - 14”.
+// title: & quot; My repeating event & quot;, { or could be “may repeating Level 2 event”, }
+// start: ’18: 00,
+//   end: &#39; 22: 00 &#39;,
+// daysOfWeek: [1],
+//   startRecur: & quot; 2019 - 10 - 06 & quot;,
+// endRecur: & quot; 2019 - 09 - 15”,
+// ]
