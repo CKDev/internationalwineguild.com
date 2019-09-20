@@ -49,6 +49,8 @@
   <script src="/javascripts/fullcalendar/core/main.js"></script>
   <script src="/javascripts/fullcalendar/daygrid/main.js"></script>
 
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </head>
 
 <body>
@@ -329,6 +331,18 @@
   <!-- Google Analytics Social Button Tracking -->
   <script src="/javascripts/ga_social_tracking.js" type="text/javascript"></script>
   <script src="/javascripts/share-n-track.js" type="text/javascript"></script>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 
 </body>
 
