@@ -5,8 +5,25 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "assets/uploads"
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts/"
-    fields:
-      - { name: Title }
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: true
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "about.html"
+        fields:
+          - {
+              label: "Title",
+              name: "title",
+              widget: "hidden",
+              default: "about",
+            }
+          - {
+              label: "Layout",
+              name: "title",
+              widget: "hidden",
+              default: "about",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
